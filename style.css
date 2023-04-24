@@ -44,7 +44,7 @@ body {
     font-family: '', sans-serif;
     line-height: 1.5rem;
     background-color: #EEEEEE;
-    color: #2B2A28;
+    color: #000000;
     margin: 0;
 }
 
@@ -91,6 +91,14 @@ input {
     outline: none;
 }
 
+.h2-style {
+    font-weight: 600;
+    font-size: 1.6rem;
+    line-height: 2rem;
+    letter-spacing: .06em;
+    margin: 0;
+}
+
 .primary-button {
 
 }
@@ -106,14 +114,117 @@ input {
 /*header*/
 
 .header__section {
+}
+
+.logo-link {
+    display: block;
+    width: 6rem;
+    height: 3rem;
+    background: url(./images/logo.svg) center / contain no-repeat;
+}
+
+.header__container, .nav__list, .socials__list {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header__container {
     background-color: #FFFFFF;
+    border-radius: 1.6rem;
+    padding: 0 5%;
+}
+
+.nav__list {
+    gap: 1rem;
+}
+
+.burger-menu {
+    display: none;
 }
 
 
 
-/*main*/
+/*hero-banner*/
+
+.hero-banner__container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: url(./images/hero-banner.svg) center / cover no-repeat;
+    color: #FFF;
+    border-radius: 2.8rem;
+}
 
 
+/*about__section*/
+
+.about__container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/*collections__section*/
+
+.collections__container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.collections__list {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: url(./images/collections-bg.svg) center / cover no-repeat;
+    border-radius: 2.8rem;
+    color: #FFF;
+    padding: 6rem 0;
+}
+
+.collections__item {
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: center / cover no-repeat;
+}
+
+.collections__item--1 {
+    background-image: url(./images/collections-1.jpg);
+}
+
+.collections__item--2 {
+    background-image: url(./images/collections-2.jpg);
+}
+
+.collections__item--3 {
+    background-image: url(./images/collections-3.jpg);
+}
+
+.collections__item-heading {
+    text-transform: uppercase;
+}
+
+.collections__item-button {
+    background-color: transparent;
+    border: 2px solid #FFF;
+    color: #FFF;
+    padding: .8rem 1.5rem;
+    border-radius: .8rem;
+}
+
+/*first-project__section*/
+
+.first-project__section {
+    padding: 0 5%;
+}
 
 /*footer*/
 

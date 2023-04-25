@@ -678,10 +678,11 @@ button.slick-next.slick-arrow:hover, button.slick-prev.slick-arrow:hover {
 
     .about__content {
         max-width: 100%;
+        padding: 0 2%;
     }
 
     .swiper-slide {
-        height: 15vh;
+        height: 40vh;
         border-radius: 1.2rem;
     }
 

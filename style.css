@@ -4,44 +4,71 @@ html {
     scroll-behavior: smooth;
 }
 
-/* @font-face {
-    font-family: "Montserrat-Light";
+@font-face {
+    font-family: "Inter-Light";
     font-style: normal;
     font-weight: 300;
-    src: local("Montserrat"),
-         url("./fonts/Montserrat-Light.woff2") format("woff2"),
-         url("./fonts/Montserrat-Light.woff") format("woff");
+    src: local("Inter-Light"),
+         url("./fonts/Inter-Light.woff2") format("woff2"),
+         url("./fonts/Inter-Light.woff") format("woff");
 }
 
 @font-face {
-    font-family: "Gilroy-Light";
+    font-family: "Inter-Light-Italic";
     font-style: normal;
     font-weight: 300;
-    src: local("Montserrat"),
-         url("./fonts/Gilroy-Light.woff2") format("woff2"),
-         url("./fonts/Gilroy-Light.woff") format("woff");
+    src: local("Inter-Light-Italic"),
+         url("./fonts/Inter-Light-Italic.woff2") format("woff2"),
+         url("./fonts/Inter-Light-Italic.woff") format("woff");
 }
 
 @font-face {
-    font-family: "Gilroy-Extrabold";
-    font-style: normal;
-    font-weight: 800;
-    src: local("Montserrat"),
-         url("./fonts/Gilroy-Extrabold.woff2") format("woff2"),
-         url("./fonts/Gilroy-Extrabold.woff") format("woff");
-}
-
-@font-face {
-    font-family: "Montserrat-Medium";
+    font-family: "Inter-Medium-Italic";
     font-style: normal;
     font-weight: 500;
-    src: local("Montserrat"),
-         url("./fonts/Montserrat-Medium.woff2") format("woff2"),
-         url("./fonts/Montserrat-Medium.woff") format("woff");
-} */
+    src: local("Inter-Medium-Italic"),
+         url("./fonts/Inter-Medium-Italic.woff2") format("woff2"),
+         url("./fonts/Inter-Medium-Italic.woff") format("woff");
+}
+
+@font-face {
+    font-family: "Inter-Regular";
+    font-style: normal;
+    font-weight: 400;
+    src: local("Inter-Regular"),
+         url("./fonts/Inter-Regular.woff2") format("woff2"),
+         url("./fonts/Inter-Regular.woff") format("woff");
+}
+
+@font-face {
+    font-family: "Inter-Medium";
+    font-style: normal;
+    font-weight: 500;
+    src: local("Inter-Medium"),
+         url("./fonts/Inter-Medium.woff2") format("woff2"),
+         url("./fonts/Inter-Medium.woff") format("woff");
+}
+
+@font-face {
+    font-family: "Inter-SemiBold";
+    font-style: normal;
+    font-weight: 600;
+    src: local("Inter-SemiBold"),
+         url("./fonts/Inter-SemiBold.woff2") format("woff2"),
+         url("./fonts/Inter-SemiBold.woff") format("woff");
+}
+
+@font-face {
+    font-family: "Inter-Bold";
+    font-style: normal;
+    font-weight: 700;
+    src: local("Inter-Bold"),
+         url("./fonts/Inter-Bold.woff2") format("woff2"),
+         url("./fonts/Inter-Bold.woff") format("woff");
+}
 
 body {
-    font-family: '', sans-serif;
+    font-family: 'Inter-Regular', sans-serif;
     line-height: 1.5rem;
     background-color: #EEEEEE;
     color: #000000;
@@ -179,33 +206,34 @@ input {
 .collections__list {
     width: 100%;
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
     background: url(./images/collections-bg.svg) center / cover no-repeat;
     border-radius: 2.8rem;
     color: #FFF;
-    padding: 6rem 0;
+    padding: 6rem 5%;
 }
 
 .collections__item {
-    width: 30%;
+    width: 32%;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     background: center / cover no-repeat;
+    border-radius: 1.6rem;
 }
 
 .collections__item--1 {
-    background-image: url(./images/collections-1.jpg);
+    background-image: url(./images/collection-1.jpg);
 }
 
 .collections__item--2 {
-    background-image: url(./images/collections-2.jpg);
+    background-image: url(./images/collection-2.jpg);
 }
 
 .collections__item--3 {
-    background-image: url(./images/collections-3.jpg);
+    background-image: url(./images/collection-3.jpg);
 }
 
 .collections__item-heading {
@@ -223,10 +251,148 @@ input {
 /*first-project__section*/
 
 .first-project__section {
-    padding: 0 5%;
 }
 
+.first-project__container {
+    position: relative;
+    display: grid;
+    grid-template-columns: 32% 65%;
+    gap: 3%;
+    padding: 5rem 5%;
+}
+
+.first-project__container:after {
+    content: '';
+    position: absolute;
+    left: 5%;
+    right: 5%;
+    bottom: 0;
+    height: 2px;
+    background-color: rgba(0, 0, 0, .4);
+}
+
+.first-project__content { 
+}
+
+.first-project__image {
+    grid-area: 1/2/2/3;
+    background: url(./images/project-1.jpg) center / cover no-repeat;
+    padding-top: 75%;
+    border-radius: 1.6rem;
+}
+
+/*second-project__section*/
+
+.second-project__section {
+}
+
+.second-project__container {
+    display: grid;
+    grid-template-columns: 65% 32%;
+    gap: 3%;
+    padding: 5rem 5%;
+}
+
+.second-project__image {
+    grid-area: 1/1/2/2;
+    background: url(./images/project-2.jpg) center / cover no-repeat;
+    padding-top: 75%;
+    border-radius: 1.6rem;
+}
+
+/*news*/
+
+.news__container {
+    background: url(./images/news-bg.svg) center / cover no-repeat;
+    color: #FFF;
+    border-radius: 2.8rem;
+    padding: 5rem 5%;
+}
+
+.news__h2 {
+    text-align: center;
+    margin-bottom: 2.7rem;
+}
+
+.news__list {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.news__item {
+    width: 32%;
+}
+
+.news__item-img {
+    background: center / cover no-repeat;
+    padding-top: 75%;
+    border-radius: 1.6rem;
+}
+
+.news__item-img--1 {
+    background-image: url(./images/news-img-1.jpg);
+}
+
+.news__item-img--2 {
+    background-image: url(./images/news-img-2.jpg);
+}
+
+.news__item-img--3 {
+    background-image: url(./images/news-img-3.jpg);
+}
+
+/*examples__section*/
+
+.examples__container {
+    padding: 5rem 5% 7rem;
+}
+
+.examples__list {
+    display: grid;
+    grid-template-columns: repeat(4, 24%);
+    justify-content: space-between;
+    gap: 1%;
+    margin-bottom: 3rem;
+}
+
+.examples__item {
+    position: relative;
+    padding-top: 100%;
+}
+
+.examples__link {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: url(./images/example-1.jpg) center / cover no-repeat;
+    border-radius: 1.6rem;
+}
+
+.examples__link-instagram {
+    display: block;
+    text-align: center;
+}
+
+
 /*footer*/
+
+.footer__container {
+    background-color: #04060C;
+    border-top-left-radius: 2.8rem;
+    border-top-right-radius: 2.8rem;
+    padding: 1.5rem 5% 2rem;
+}
+
+.footer__nav-list {
+    color: #FFF;
+}
+
+.socials__list {
+
+}
 
 
 

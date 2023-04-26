@@ -1,3 +1,120 @@
-div.products-swiper__swiper {
-    display: flex;
+.catalog-page-heading__container {
+    padding: 0 5%;
+}
+
+catalog-page-heading__main-heading {
+    margin: 0 0 1.6rem;
+}
+
+.products-swiper__section, .products-list__section {
+    margin-bottom: 4rem;
+}
+
+.products-swiper__container {
+    display: grid;
+    grid-template-columns: 50% 49%;
+    gap: 1%;
+    padding: 0 5%;
+}
+
+.products-list__container {
+    gap: 1%;
+    padding: 0 5%;
+}
+
+.products__list {
+    display: grid;
+    gap: .5rem;
+}
+
+.products-list--reverse {
+    grid-area: 1/2/2/3;
+}
+
+.products__list--small-section {
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.products__item-img-wrapper {
+    position: relative;
+    padding-top: 100%;
+    margin: 0 0 .8rem;
+}
+
+.products__item-img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: url(./images/example-2.jpg) center / cover no-repeat;
+    border-radius: 1.6rem;
+}
+
+.products__item--description {
+    font-family: "Inter-SemiBold", sans-serif;
+    font-size: 1.2rem;
+    line-height: 1.3;
+    letter-spacing: 0.06em;
+    margin: 0 0 .4rem;
+}
+
+.products__item--collection {
+    font-family: "Inter-Light-Italic", sans-serif;
+    font-size: 1rem;
+    line-height: 1.20;
+    letter-spacing: 0.04em;
+    margin: 0;
+}
+
+/*swiper*/
+.products-swiper__swiper {
+    width: 100%;
+}
+
+.products-swiper__slide-wrapper {
+    height: 52vh;
+    min-height: 650px;
+    background: url(./images/about.jpg) center / cover no-repeat;
+    border-radius: 2.8rem;
+}
+
+.products-swiper__swiper .slick-prev {
+    position: absolute;
+    top: 53vh;
+    left: 81%;
+}
+
+.products-swiper__swiper .slick-next {
+    position: absolute;
+    top: 53vh;
+    left: 92%;
+}
+
+.products-swiper__swiper .slick-dots {
+    position: absolute;
+    top: 53vh;
+    right: 43%;
+}
+
+.products-swiper__slide {
+    /*position: absolute;*/
+    /*top: 0;*/
+    /*left: 0;*/
+    /*right: 0;*/
+    /*bottom: 0;*/
+    /*background: url(./images/example-2.jpg) center / cover no-repeat;*/
+    /*border-radius: 1.6rem;*/
+}
+
+/*.products-swiper__slide-wrapper img {*/
+/*    min-height: 100%;*/
+/*    min-width: 100%;*/
+/*    position: relative;*/
+/*    display: inline-block;*/
+/*    max-width: none;*/
+/*}*/
+
+.products__list--big-section {
+    grid-template-columns: repeat(4, 1fr);
 }

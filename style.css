@@ -198,7 +198,6 @@ input {
 
 .hero-banner__section::after {
     content: '';
-    content: '';
     position: absolute;
     width: 2px;
     height: 18vh;
@@ -256,11 +255,11 @@ input {
     text-align: center;
 }
 
-.swiper {
+.about__swiper {
     width: 100%;
 }
 
-.swiper-slide {
+.about__swiper-slide {
     height: 65vh;
     width: 100%;
     background: url(./images/about.jpg) center / cover no-repeat;
@@ -275,14 +274,18 @@ input {
     width: 3rem;
     height: 3rem;
     z-index: 50;
+}
+
+.about__swiper .slick-prev,.about__swiper .slick-next {
     top: 47%;
 }
 
-.slick-prev {
+
+.about__swiper .slick-prev {
     left: 5%;
 }
 
-.slick-next {
+.about__swiper .slick-next {
     right: 5%;
 }
 
@@ -301,7 +304,7 @@ button.slick-next.slick-arrow, button.slick-prev.slick-arrow {
 }
 
 button.slick-next.slick-arrow:hover, button.slick-prev.slick-arrow:hover {
-    box-shadow: 0px 0px 100px 100px rgba(54, 78, 96, 0.3) inset;
+    box-shadow: 0 0 100px 100px rgba(54, 78, 96, 0.3) inset;
 }
 
 /*collections__section*/

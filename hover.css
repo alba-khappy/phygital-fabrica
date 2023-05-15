@@ -58,7 +58,7 @@
     fill: rgba(192, 63, 81, 1);
 }
 
-.socials__item, .footer__email {
+.socials__item, .footer__email, .footer__copyrights {
     opacity: 0.5;
 }
 

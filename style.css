@@ -595,7 +595,6 @@ button.slick-next.slick-arrow:hover, button.slick-prev.slick-arrow:hover {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     color: #FFF;
-    opacity: 0.5;
 }
 
 .socials__list {

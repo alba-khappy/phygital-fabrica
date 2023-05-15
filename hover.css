@@ -4,7 +4,7 @@
 .news__item-img, 
 .examples__link-instagram,
 .examples__link-instagram:hover svg path,
-.socials__link,
+.socials__item,
 .footer__email {
     transition: all .3s ease-in-out;
 }
@@ -58,12 +58,10 @@
     fill: rgba(192, 63, 81, 1);
 }
 
-.socials__link:hover svg path {
-    stroke: rgb(255, 255, 255);
-    opacity: 1;
+.socials__item, .footer__email {
+    opacity: 0.5;
 }
 
-.footer__email:hover {
-    color: rgb(255, 255, 255);
+.socials__item:hover, .footer__email:hover {
     opacity: 1;
 }
